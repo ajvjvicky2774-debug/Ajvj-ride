@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>AJVJ Ride</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#eeeeee;
+}
+
+.header{
+    background:black;
+    color:white;
+    padding:20px;
+    font-size:25px;
+}
+
+.map{
+    height:250px;
+    background:#cccccc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+}
+
+.box{
+    background:white;
+    margin:15px;
+    padding:20px;
+    border-radius:20px;
+}
+
+input{
+    width:90%;
+    padding:15px;
+    margin:8px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:15px;
+    border-radius:15px;
+    border:none;
+    cursor:pointer;
+}
+
+.location{
+    background:#eeeeee;
+    width:90%;
+}
+
+.vehicle{
+    display:flex;
+    gap:10px;
+}
+
+.vehicle button{
+    background:#f5f5f5;
+}
+
+.fare{
+    background:white;
+    margin:15px;
+    padding:20px;
+    border-radius:20px;
+}
+
+.book{
+    width:100%;
+    background:black;
+    color:white;
+    border-radius:25px;
+    font-size:18px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+🚗 AJVJ Ride
+</div>
+
+
+<div class="map">
+🗺️ MAP AREA
+</div>
+
+
+
+<div class="box">
+
+
+<h2>Book Your Ride</h2>
+
+
+<input placeholder="📍 Pickup Location">
+
+
+<button class="location">
+📍 Use My Current Location
+</button>
+
+
+<br><br>
+
+
+<input placeholder="🏁 Drop Location">
+
+
+
+<h3>Select Vehicle</h3>
+
+
+<div class="vehicle">
+
+<button>
+🚗 Car
+</button>
+
+
+<button>
+🛺 Auto
+</button>
+
+
+<button>
+🏍️ Bike
+</button>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="fare">
+
+<h3>Estimated Fare</h3>
+
+<p>🚗 Car : ₹150</p>
+
+<p>🛺 Auto : ₹80</p>
+
+<p>🏍️ Bike : ₹50</p>
+
+</div>
+
+
+
+
+<div class="box">
+
+
+<button class="book" onclick="bookRide()">
+Book Ride
+</button>
+
+
+</div>
+
+
+
+<script>
+
+function bookRide(){
+
+alert("Ride booked successfully! 🚗 Driver will be assigned soon.");
+
+}
+
+</script>
+
+
+</body>
+
+</html>
